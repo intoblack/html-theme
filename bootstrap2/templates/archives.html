@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="content">
-<h1> {{ SITENAME }}&nbsp历史</h1>
+<h1> 历史新闻&nbsp</h1>
 
 <dl>
 {% for article in dates %}
-	<dt>{{ article.locale_date }}</dt>
-	<dd><a href='{{ article.url }}'>{{ article.title }}</a></dd>
+	<dd><font size=3 color='blue'>{{ article.locale_date }} &nbsp&nbsp</font><a href='{{ article.url }}'>{{ article.title }}</a></dd>
 {% endfor %}
 </dl>
 </section>
